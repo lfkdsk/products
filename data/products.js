@@ -188,4 +188,16 @@ window.PRODUCTS = [
     tags: ["资产管理", "GitHub", "AI"],
     link: "https://assets.lfkdsk.org/",
   },
+  {
+    name: "Switchboard",
+    mono: "Sb",
+    tagline: "浏览器里的远程终端",
+    description:
+      "跑一条命令把机器接入，就能在浏览器拿到真正的交互式终端 —— 多标签、文件传输、实时主机状态。两端都向 Cloudflare 中继出站，NAT / 防火墙后也能用，无需端口转发或 VPN。",
+    category: "平台 & 服务",
+    accent: "#06b6d4",
+    status: "Live",
+    tags: ["远程终端", "Cloudflare", "CLI"],
+    link: "https://shell.lfkdsk.org/",
+  },
 ];
