@@ -93,6 +93,19 @@ window.PRODUCTS = [
     link: "https://github.com/lfkdsk/inktype",
     linkText: "GitHub",
   },
+  {
+    name: "SplashG",
+    mono: "Sg",
+    tagline: "GitHub 相册的 iOS 客户端",
+    description:
+      "在 iOS 上浏览 album_template 相册 —— 自己的仓库，加上关注好友的动态流。MyerSplash 风格的深色瀑布流与悬浮胶囊标签栏，GitHub OAuth 登录，缓存过的相册离线也能翻。",
+    category: "影像 & 创作",
+    accent: "#f97316",
+    status: "开源",
+    tags: ["iOS", "相册", "SwiftUI"],
+    link: "https://github.com/lfkdsk/SplashG",
+    linkText: "GitHub",
+  },
 
   // ── 生活 & 工具 ──────────────────────────────────────────
   {
@@ -161,6 +174,45 @@ window.PRODUCTS = [
     status: "Live",
     tags: ["网络", "代理"],
     link: "https://wall.lfkdsk.org/",
+  },
+  {
+    name: "Burrow",
+    mono: "B",
+    tagline: "Mac 原生系统维护工具",
+    description:
+      "清理 · 工程 · 安装包 · 软件 · 优化 · 分析 · 状态，七大模块按行星命名。灵感来自开源项目 Mole（鼹鼠）—— Burrow 是鼹鼠深挖的洞穴。纯 SwiftUI 实现，只依赖 Sparkle 做自动更新。",
+    category: "生活 & 工具",
+    accent: "#d946ef",
+    status: "开源",
+    tags: ["macOS", "SwiftUI", "系统清理"],
+    link: "https://github.com/lfkdsk/burrow",
+    linkText: "GitHub",
+  },
+  {
+    name: "海外哔哩",
+    mono: "Ob",
+    tagline: "Apple TV 上的第三方 bilibili",
+    description:
+      "面向海外用户的 tvOS 客户端，核心是应用内自适应 CDN：分块下载、镜像域名池、按实测网速自动切线。登录后最高 8K / 4K / HDR，弹幕、字幕、直播与追番一并支持。",
+    category: "生活 & 工具",
+    accent: "#fb7299",
+    status: "开源",
+    tags: ["tvOS", "bilibili", "CDN"],
+    link: "https://github.com/lfkdsk/oversea-bili",
+    linkText: "GitHub",
+  },
+  {
+    name: "MyTrails",
+    mono: "Mt",
+    tagline: "复刻 AllTrails 的徒步 App",
+    description:
+      "iOS 徒步应用：7.7 万条美国步道、4.2 万条 GPS 路线，首次启动下载全量离线数据（配套开源数据库 Trails-DB）。全文搜索、GPS 轨迹记录与 iCloud 同步，零第三方依赖。",
+    category: "生活 & 工具",
+    accent: "#65a30d",
+    status: "开源",
+    tags: ["iOS", "徒步", "离线地图"],
+    link: "https://github.com/lfkdsk/MyTrails",
+    linkText: "GitHub",
   },
 
   // ── 平台 & 服务 ──────────────────────────────────────────
