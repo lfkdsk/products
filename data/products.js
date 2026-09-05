@@ -214,6 +214,18 @@ window.PRODUCTS = [
     link: "https://github.com/lfkdsk/MyTrails",
     linkText: "GitHub",
   },
+  {
+    name: "Quick Copy",
+    mono: "Qc",
+    tagline: "存进 Git 的剪贴板",
+    description:
+      "粘贴文字或拖入图片，一次提交直接写进你自己的 GitHub 仓库 —— 无服务端、无数据库，浏览器直连 GitHub API。条目就是普通 JSON 和图片文件，删掉应用数据也照样能读。",
+    category: "生活 & 工具",
+    accent: "#ff5f33",
+    status: "Live",
+    tags: ["剪贴板", "GitHub", "无后端"],
+    link: "https://lfkdsk.github.io/quick-copy/",
+  },
 
   // ── 平台 & 服务 ──────────────────────────────────────────
   {
