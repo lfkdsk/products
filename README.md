@@ -5,11 +5,9 @@
 ## ✨ 特性
 
 - 数据驱动：所有产品集中在 `data/products.js`，加产品 = 加一个对象
-- 按 `category` 自动分组成区块，响应式网格
-- 深色 / 浅色模式（自动跟随系统，可手动切换）
-- 实时搜索；顶部自动统计产品 / 已上线 / 分类数量
-- 图标支持 **字母 monogram**（默认）/ **图片 logo** / **emoji**
-- 状态徽章自动配色（Live / Beta / Coming Soon / 开源 …）
+- 按 `category` 自动分组成区块，宽屏两列、窄屏一列
+- 亮色为主、黑字，一个强调色（`--accent`）贯穿全站；深色模式跟随系统，可手动切换
+- 每个项目排成一行：名字 / 一句话 / 描述 / 域名 + 标签，没有卡片、没有阴影
 
 ## 🚀 本地预览
 
@@ -30,25 +28,27 @@ python3 -m http.server 8000
   tagline: "一句话简介",                   // 必填
   description: "更详细的描述（可选）",
   category: "影像 & 创作",                 // 分组名，相同分类归到同一区块
-  mono: "G",                              // 图标字母（不填则自动取首字母）
-  icon: "assets/icons/myapp.svg",         // 图片图标（可选，填了则覆盖字母图标）
-  accent: "#8b5cf6",                      // 主题色（影响图标、悬停、链接配色）
   status: "Live",                         // Live | Beta | Coming Soon | 开源 | 自定义
-  tags: ["AI", "CLI"],                    // 标签（可选）
-  link: "https://example.com",            // 跳转链接（可选，卡片整体可点）
-  linkText: "GitHub",                     // 链接文案（不填则显示域名）
-  featured: false                         // true = 标记为旗舰（带 ★）
+  tags: ["AI", "CLI"],                    // 标签（可选），排在域名右边
+  link: "https://example.com",            // 跳转链接（可选，整行可点）
+  linkText: "自定义文案"                   // 可选，仅当链接解析不出域名时兜底
 }
 ```
 
-**图标有三种方式**，按优先级：
+**关于 `link` 的显示**：默认展示链接本身的路径 —— `github.com/lfkdsk/Plate`、
+`picg.lfkdsk.org/main` —— 比笼统写一个「GitHub」有信息量。
 
-1. **字母 monogram（默认）**：不填 `icon`，自动用名称首字母（或 `mono` 指定）生成带主题色的字母图标 —— 当前所有产品用的就是这种，风格统一。
-2. **图片 logo**：把图标放进 `assets/icons/`，在 `icon` 填路径（如 `"assets/icons/myapp.svg"`）。推荐正方形 SVG 或 ≥256px 的 PNG。
-3. **emoji**：`icon` 直接写 emoji，如 `"🚀"`。
+**状态**：`status` 里含「Live / 上线」的会用强调色标出，其余（开源 / Beta / Coming Soon）
+是安静的灰字。
 
-> **分类**：`category` 相同的产品会自动归到同一区块。新分类想要右侧的英文小标题，在
+> **分类**：`category` 相同的产品会自动归到同一区块。新分类想要旁边的英文小标题，在
 > [`assets/js/app.js`](assets/js/app.js) 顶部的 `CATEGORY_EN` 里加一行即可（不加也能正常显示）。
+
+### 数据里的历史字段
+
+`mono`、`icon`、`accent`、`featured` 是上一版卡片布局留下的（字母图标、每个产品一个主题色、
+★ 旗舰标记）。当前这版不渲染它们，数据里先留着 —— 想回到那套外观的话，`git revert` 一下就行，
+不用重新填 20 份配色。
 
 ## 📁 目录结构
 
@@ -58,7 +58,6 @@ python3 -m http.server 8000
 ├── data/products.js        # ← 产品数据（你主要改这里）
 ├── assets/
 │   ├── css/styles.css      # 样式
-│   ├── js/app.js           # 渲染逻辑
-│   └── icons/              # 产品图标放这里
+│   └── js/app.js           # 渲染逻辑
 └── README.md
 ```
