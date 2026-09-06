@@ -224,7 +224,7 @@ window.PRODUCTS = [
     accent: "#ff5f33",
     status: "Live",
     tags: ["剪贴板", "GitHub", "无后端"],
-    link: "https://lfkdsk.github.io/quick-copy/",
+    link: "https://quick-copy.lfkdsk.org/",
   },
 
   // ── 平台 & 服务 ──────────────────────────────────────────
