@@ -106,6 +106,58 @@ window.PRODUCTS = [
     link: "https://github.com/lfkdsk/SplashG",
     linkText: "GitHub",
   },
+  {
+    name: "Rawloom",
+    mono: "Rl",
+    tagline: "复现 Adobe Project Indigo 的 iOS 计算摄影相机",
+    description:
+      "连拍一组刻意欠曝的 RAW 帧，对齐、合并降噪、借手抖做超分辨率，再以接近单反的影调与色彩收尾 —— 整条管线用 Metal 实现，输出计算 RAW 的 DNG 和 Ultra HDR JPEG。",
+    category: "影像 & 创作",
+    accent: "#e11d48",
+    status: "开源",
+    tags: ["iOS", "计算摄影", "Metal"],
+    link: "https://github.com/lfkdsk/Rawloom",
+    linkText: "GitHub",
+  },
+  {
+    name: "album_template",
+    mono: "At",
+    tagline: "Gallery 背后的相册站点生成器",
+    description:
+      "把放照片的 GitHub 仓库构建成静态相册站：build.py 生成 SQLite 数据库和每个相册的页面，魔改的 Hexo 主题负责渲染，前端用 wasm SQLite 直接查库，地点、随机、状态页都跑在 GitHub Pages 上。SplashG 浏览的就是这种相册。",
+    category: "影像 & 创作",
+    accent: "#0d9488",
+    status: "开源",
+    tags: ["Hexo", "相册", "GitHub Pages"],
+    link: "https://github.com/lfkdsk/album_template",
+    linkText: "GitHub",
+  },
+  {
+    name: "Gallery Daily",
+    mono: "Gd",
+    tagline: "每天一张 Gallery 照片，做成 SVG",
+    description:
+      "每天从 Gallery 的数据生成两张 SVG：一张带相框和 EXIF 栏的当日照片（按日期确定性选片），一张当年的拍摄热力图，推到 daily 分支供 README 引用。零依赖，几秒跑完。",
+    category: "影像 & 创作",
+    accent: "#a855f7",
+    status: "开源",
+    tags: ["SVG", "GitHub Actions", "摄影"],
+    link: "https://github.com/lfkdsk/gallery-daily",
+    linkText: "GitHub",
+  },
+  {
+    name: "Gallery Animal Index",
+    mono: "Ai",
+    tagline: "给相册建动物索引的 Agent Skill",
+    description:
+      "让 Claude Code / Codex 遍历照片仓库、认出照片里的动物，维护一份中英双语的「物种 → 图片」索引。按文件夹缓存扫描结果，新照片只做增量；优先读缩略图分支，省 token。",
+    category: "影像 & 创作",
+    accent: "#84cc16",
+    status: "开源",
+    tags: ["Agent Skill", "Claude Code", "图像识别"],
+    link: "https://github.com/lfkdsk/gallery-analysis-skill",
+    linkText: "GitHub",
+  },
 
   // ── 生活 & 工具 ──────────────────────────────────────────
   {
@@ -215,6 +267,45 @@ window.PRODUCTS = [
     linkText: "GitHub",
   },
   {
+    name: "Trails-DB",
+    mono: "Td",
+    tagline: "MyTrails 的离线步道数据库",
+    description:
+      "7.7 万条美国徒步步道的元数据 + 4.2 万条离线路线几何，打包成单个 SQLite 文件，带 FTS5 全文索引。路线取自美国林务局的公有领域数据和 OpenStreetMap。仅供学习研究。",
+    category: "生活 & 工具",
+    accent: "#4d7c0f",
+    status: "开源",
+    tags: ["SQLite", "开放数据", "徒步"],
+    link: "https://github.com/lfkdsk/Trails-DB",
+    linkText: "GitHub",
+  },
+  {
+    name: "EmbyTV",
+    mono: "Et",
+    tagline: "为 LG webOS 电视重写的 Emby 客户端",
+    description:
+      "不是 emby-web 套壳，UI、焦点导航和播放器都按遥控器从头写。起因是国语、粤语音轨语言码同为 chi 而切不动 —— 按 Title 重建音轨标签，走电视原生管线瞬时切换，不依赖服务器转码。同一份代码也有纯静态的网页版。",
+    category: "生活 & 工具",
+    accent: "#52b54b",
+    status: "开源",
+    tags: ["webOS", "Emby", "电视"],
+    link: "https://github.com/lfkdsk/embytv-webos",
+    linkText: "GitHub",
+  },
+  {
+    name: "Mocation Web",
+    mono: "Mo",
+    tagline: "影视取景地地图",
+    description:
+      "明亮杂志风的取景地浏览站：在地图上找电影、剧集的拍摄地。基于 Mocation App 的公开只读接口，Next.js 服务端渲染 + ISR 缓存，自带图片代理和只读白名单代理，GCJ-02 坐标自动转换。",
+    category: "生活 & 工具",
+    accent: "#0284c7",
+    status: "开源",
+    tags: ["Next.js", "地图", "影视"],
+    link: "https://github.com/lfkdsk/Mocation",
+    linkText: "GitHub",
+  },
+  {
     name: "Quick Copy",
     mono: "Qc",
     tagline: "存进 Git 的剪贴板",
@@ -263,5 +354,74 @@ window.PRODUCTS = [
     status: "Live",
     tags: ["远程终端", "Cloudflare", "CLI"],
     link: "https://shell.lfkdsk.org/",
+  },
+
+  // ── 游戏 & 引擎 ──────────────────────────────────────────
+  {
+    name: "Alpine Post",
+    mono: "Ap",
+    tagline: "《山巅邮路》· 零战斗的送信 RPG",
+    description:
+      "代班邮差冒雨把三封信送上山，赶在最后一班缆车停运前抵达灯塔：五张地图，没有战斗。基于 Pocket RPG Kit，同一份包跑在桌面、浏览器（wasm）和 PSP 上；闲置 10 秒自动演示通关，随时接管，还能倒带。",
+    category: "游戏 & 引擎",
+    accent: "#dc2626",
+    status: "开源",
+    tags: ["RPG", "PocketJS", "PSP"],
+    link: "https://github.com/lfkdsk/pocket-alpine-post",
+    linkText: "GitHub",
+  },
+  {
+    name: "Pocket RPG Kit",
+    mono: "Pk",
+    tagline: "PocketJS 上的 2D 瓦片 RPG 运行时",
+    description:
+      "RPG Maker 式游戏需要的部件，但不绑定任何一款游戏：纯 TS 引擎（事件解释器、多地图、确定性存档，同一条按键录像在所有平台逐字节重放）、Solid UI 组件、演示模式和素材管线，外加 rpgkit-project/v1 数据格式、四个示例和预览版地图编辑器。",
+    category: "游戏 & 引擎",
+    accent: "#7c3aed",
+    status: "开源",
+    tags: ["游戏引擎", "TypeScript", "PocketJS"],
+    link: "https://github.com/lfkdsk/pocketjs-rpgkit",
+    linkText: "GitHub",
+  },
+
+  // ── 开发 & 研究 ──────────────────────────────────────────
+  {
+    name: "RILO",
+    mono: "Ri",
+    tagline: "Unity IL2CPP 的 IL 层优化器",
+    description:
+      "作为 UnityLinker 的自定义步骤，在链接后用 Mono.Cecil 改写 IL 再交给 il2cpp —— 专消 clang -O3 看不穿的托管开销：接口派发、委托、装箱、LINQ 枚举器、不透明的 BCL 调用。收益和负面结果都如实记录在案。",
+    category: "开发 & 研究",
+    accent: "#334155",
+    status: "开源",
+    tags: ["Unity", "IL2CPP", "编译优化"],
+    link: "https://github.com/lfkdsk/RILO",
+    linkText: "GitHub",
+  },
+  {
+    name: "background-click",
+    mono: "Bc",
+    tagline: "macOS 后台点击：点完不抢焦点",
+    description:
+      "从逆向 OpenAI Codex 的 Computer Use 插件出发，只用公开的 CGEvent / NSEvent / AX API 加一个私有 SPI，复现不抢前台焦点的点击、拖拽和键盘输入。附 CLI、靶子 App 和完整的逆向报告。",
+    category: "开发 & 研究",
+    accent: "#9333ea",
+    status: "开源",
+    tags: ["macOS", "逆向", "Computer Use"],
+    link: "https://github.com/lfkdsk/bg-click",
+    linkText: "GitHub",
+  },
+  {
+    name: "lc-rehab",
+    mono: "Lc",
+    tagline: "终端里的 LeetCode 复健工具",
+    description:
+      "拉题、本地写代码、在线自测、提交判题全在命令行完成；内置 NeetCode 150 复健序列，AC 后按 1 / 3 / 7 / 16 / 35 天安排复习。请求经自己部署的 Cloudflare Worker 中转，npm run setup 一键搞定。",
+    category: "开发 & 研究",
+    accent: "#ffa116",
+    status: "开源",
+    tags: ["CLI", "LeetCode", "Cloudflare"],
+    link: "https://github.com/lfkdsk/Rehabilitation",
+    linkText: "GitHub",
   },
 ];
