@@ -12,6 +12,8 @@
     "影像 & 创作": "Imaging & Creation",
     "生活 & 工具": "Life & Tools",
     "平台 & 服务": "Platform & Services",
+    "游戏 & 引擎": "Games & Engines",
+    "开发 & 研究": "Dev & Research",
   };
 
   var sectionsEl = document.getElementById("sections");
