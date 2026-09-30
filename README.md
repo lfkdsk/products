@@ -35,8 +35,8 @@ python3 -m http.server 8000
 }
 ```
 
-**关于 `link` 的显示**：默认展示链接本身的路径 —— `github.com/lfkdsk/Plate`、
-`picg.lfkdsk.org/main` —— 比笼统写一个「GitHub」有信息量。
+**关于 `link` 的显示**：默认展示链接本身的路径 —— `github.com/lfkdsk/Plate` ——
+比笼统写一个「GitHub」有信息量。
 
 **状态**：`status` 里含「Live / 上线」的会用强调色标出，其余（开源 / Beta / Coming Soon）
 是安静的灰字。
