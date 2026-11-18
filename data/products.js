@@ -158,6 +158,18 @@ window.PRODUCTS = [
     link: "https://github.com/lfkdsk/gallery-analysis-skill",
     linkText: "GitHub",
   },
+  {
+    name: "Calotype",
+    mono: "Ct",
+    tagline: "先存原片，再显影的 iPhone 相机",
+    description:
+      "按下快门先把 Apple ProRAW 原片完整存进 App，再在后台排队显影成 HEIF / JPEG 存入相册 —— 快门不等显影，原片留底随时可重新显影。名字取自 1841 年先得负片、再印正片的卡罗式摄影法。TestFlight 公测中。",
+    category: "影像 & 创作",
+    accent: "#b45309",
+    status: "Beta",
+    tags: ["iOS", "ProRAW", "相机"],
+    link: "https://calotype.lfkdsk.org/",
+  },
 
   // ── 生活 & 工具 ──────────────────────────────────────────
   {
@@ -241,19 +253,6 @@ window.PRODUCTS = [
     linkText: "GitHub",
   },
   {
-    name: "海外哔哩",
-    mono: "Ob",
-    tagline: "Apple TV 上的第三方 bilibili",
-    description:
-      "面向海外用户的 tvOS 客户端，核心是应用内自适应 CDN：分块下载、镜像域名池、按实测网速自动切线。登录后最高 8K / 4K / HDR，弹幕、字幕、直播与追番一并支持。",
-    category: "生活 & 工具",
-    accent: "#fb7299",
-    status: "开源",
-    tags: ["tvOS", "bilibili", "CDN"],
-    link: "https://github.com/lfkdsk/oversea-bili",
-    linkText: "GitHub",
-  },
-  {
     name: "MyTrails",
     mono: "Mt",
     tagline: "复刻 AllTrails 的徒步 App",
@@ -280,19 +279,6 @@ window.PRODUCTS = [
     linkText: "GitHub",
   },
   {
-    name: "EmbyTV",
-    mono: "Et",
-    tagline: "为 LG webOS 电视重写的 Emby 客户端",
-    description:
-      "不是 emby-web 套壳，UI、焦点导航和播放器都按遥控器从头写。起因是国语、粤语音轨语言码同为 chi 而切不动 —— 按 Title 重建音轨标签，走电视原生管线瞬时切换，不依赖服务器转码。同一份代码也有纯静态的网页版。",
-    category: "生活 & 工具",
-    accent: "#52b54b",
-    status: "开源",
-    tags: ["webOS", "Emby", "电视"],
-    link: "https://github.com/lfkdsk/embytv-webos",
-    linkText: "GitHub",
-  },
-  {
     name: "Mocation Web",
     mono: "Mo",
     tagline: "影视取景地地图",
@@ -316,6 +302,111 @@ window.PRODUCTS = [
     status: "Live",
     tags: ["剪贴板", "GitHub", "无后端"],
     link: "https://quick-copy.lfkdsk.org/",
+  },
+  {
+    name: "证件照排版",
+    mono: "Id",
+    tagline: "4×6 相纸排证件照，冲印几毛钱",
+    description:
+      "把护照 / 签证照排到 4×6、5×7 或 A6 相纸上，拿去 CVS / Walgreens 冲印约 $0.3–0.5。内置美国 2×2、中国护照、一寸二寸等尺寸与头部参考线，300 DPI 输出，照片只在浏览器本地处理。",
+    category: "生活 & 工具",
+    accent: "#2563eb",
+    status: "Live",
+    tags: ["证件照", "打印", "纯前端"],
+    link: "https://lfkdsk.github.io/id-photo-print/",
+  },
+  {
+    name: "imsg-sync",
+    mono: "Im",
+    tagline: "在任何浏览器里收 Mac 上的短信和验证码",
+    description:
+      "Mac 菜单栏 App 只读 Messages 数据库，把短信和 iMessage 转发到你自己部署的 Cloudflare Worker + D1；网页用密钥登录，验证码自动识别、一键复制，Mac 掉线时通过 Bark / Telegram / ntfy 告警。纯自托管，免费额度内跑完。",
+    category: "生活 & 工具",
+    accent: "#0891b2",
+    status: "开源",
+    tags: ["macOS", "Cloudflare", "验证码"],
+    link: "https://github.com/lfkdsk/imsg-sync",
+    linkText: "GitHub",
+  },
+
+  // ── 电视 & 大屏 ──────────────────────────────────────────
+  {
+    name: "海外哔哩",
+    mono: "Ob",
+    tagline: "Apple TV 上的第三方 bilibili（tvOS）",
+    description:
+      "面向海外用户的 tvOS 客户端，核心是应用内自适应 CDN：分块下载、镜像域名池、按实测网速自动切线。登录后最高 8K / 4K / HDR，弹幕、字幕、直播与追番一并支持。",
+    category: "电视 & 大屏",
+    accent: "#fb7299",
+    status: "开源",
+    tags: ["tvOS", "bilibili", "CDN"],
+    link: "https://github.com/lfkdsk/oversea-bili",
+    linkText: "GitHub",
+  },
+  {
+    name: "海外哔哩 webOS",
+    mono: "Ow",
+    tagline: "LG 电视上的第三方 bilibili",
+    description:
+      "海外哔哩的 LG webOS 版：在 B 站下发的候选线路之间按 2MB 分块实时择优的自适应 CDN，shaka-player 播放，弹幕、评论区与播放清单齐全。后台 JS 服务零 npm 依赖，开发者模式即可安装，不需要 root。",
+    category: "电视 & 大屏",
+    accent: "#fb7299",
+    status: "开源",
+    tags: ["webOS", "bilibili", "CDN"],
+    link: "https://github.com/lfkdsk/oversea-bili-webos",
+    linkText: "GitHub",
+  },
+  {
+    name: "海外哔哩 Android TV",
+    mono: "Oa",
+    tagline: "复用 webOS 版的 Android TV 外壳",
+    description:
+      "webOS 版前端跑在 WebView 里，后台服务由内嵌的 nodejs-mobile 原样运行，一行不改；播放则交给原生 ExoPlayer 吃本地 DASH 清单，HEVC、AV1、杜比视界、HDR 都走系统硬解。",
+    category: "电视 & 大屏",
+    accent: "#f43f5e",
+    status: "开源",
+    tags: ["Android TV", "ExoPlayer", "bilibili"],
+    link: "https://github.com/lfkdsk/oversea-bili-android",
+    linkText: "GitHub",
+  },
+  {
+    name: "EmbyTV",
+    mono: "Et",
+    tagline: "为 LG webOS 电视重写的 Emby 客户端",
+    description:
+      "不是 emby-web 套壳，UI、焦点导航和播放器都按遥控器从头写。起因是国语、粤语音轨语言码同为 chi 而切不动 —— 按 Title 重建音轨标签，走电视原生管线瞬时切换，不依赖服务器转码。同一份代码也有纯静态的网页版。",
+    category: "电视 & 大屏",
+    accent: "#52b54b",
+    status: "开源",
+    tags: ["webOS", "Emby", "电视"],
+    link: "https://github.com/lfkdsk/embytv-webos",
+    linkText: "GitHub",
+  },
+  {
+    name: "webOS Aerials",
+    mono: "Wa",
+    tagline: "把 Apple TV 航拍屏保搬到 LG 电视",
+    description:
+      "播放 Apple 公开的 114 段 4K HEVC 航拍镜头，带中文地名和时钟、段间淡入淡出。可做独立 App，也能嵌进自制启动器接管系统屏保；可选本地缓存服务断点续传。无需 root。",
+    category: "电视 & 大屏",
+    accent: "#0ea5e9",
+    status: "开源",
+    tags: ["webOS", "屏保", "4K"],
+    link: "https://github.com/lfkdsk/webos-aerials",
+    linkText: "GitHub",
+  },
+  {
+    name: "电视键盘",
+    mono: "Tk",
+    tagline: "用手机给 LG 电视的输入框打字",
+    description:
+      "电视上扫码，手机或电脑浏览器里打的字实时同步进当前 App 的输入框，中文直输。走开发者模式自带的 DevTools 通道插入文字，支持各种侧载网页应用；地址用 mDNS 名字，换 IP 也不用重扫。",
+    category: "电视 & 大屏",
+    accent: "#64748b",
+    status: "开源",
+    tags: ["webOS", "输入法", "无需 root"],
+    link: "https://github.com/lfkdsk/webos-tv-keyboard",
+    linkText: "GitHub",
   },
 
   // ── 平台 & 服务 ──────────────────────────────────────────
@@ -383,6 +474,31 @@ window.PRODUCTS = [
     link: "https://github.com/lfkdsk/pocketjs-rpgkit",
     linkText: "GitHub",
   },
+  {
+    name: "Wander",
+    mono: "Wd",
+    tagline: "会自己生长、自己游荡的像素世界",
+    description:
+      "围绕玩家流式生成的无尽世界：走到哪里城镇长到哪里，野外有地标、传闻和差事，放下手柄它就自己逛。Wander Online 加上 GitHub 登录、捏人和权威服务器的共享世界（预测 + 回滚重放）。浏览器里直接玩。",
+    category: "游戏 & 引擎",
+    accent: "#16a34a",
+    status: "Live",
+    tags: ["PocketJS", "多人在线", "程序生成"],
+    link: "https://lfkdsk.github.io/pocketjs-wander/",
+  },
+  {
+    name: "Pocket Tuxemon",
+    mono: "Tx",
+    tagline: "把 Tuxemon 整个世界导入 Pocket RPG Kit",
+    description:
+      "导入器自动转换开源游戏 Tuxemon 的全部 263 张地图和 4,572 个事件 —— 地形、NPC、对话、过场和传送，Spyder 主线已能用确定性录像从头跑到通关。同一份包跑在桌面、网页和 PSP 上。仍在开发中。",
+    category: "游戏 & 引擎",
+    accent: "#ca8a04",
+    status: "开源",
+    tags: ["RPG", "PocketJS", "导入器"],
+    link: "https://github.com/lfkdsk/pocketjs-tuxemon",
+    linkText: "GitHub",
+  },
 
   // ── 开发 & 研究 ──────────────────────────────────────────
   {
@@ -422,6 +538,58 @@ window.PRODUCTS = [
     status: "开源",
     tags: ["CLI", "LeetCode", "Cloudflare"],
     link: "https://github.com/lfkdsk/Rehabilitation",
+    linkText: "GitHub",
+  },
+  {
+    name: "Fleet",
+    mono: "Fl",
+    tagline: "用一个 SQLite 账本编排多个编码 Agent",
+    description:
+      "调度你已经在用的 Claude Code、Codex、Cursor、Grok CLI：任务、依赖、独立 worktree、资源租约、结论声明全部记在 SQLite 里；常驻进程负责起任务、回收、重试，评审必须换另一个模型家族来做。",
+    category: "开发 & 研究",
+    accent: "#4f46e5",
+    status: "开源",
+    tags: ["Agent", "编排", "SQLite"],
+    link: "https://github.com/lfkdsk/fleet",
+    linkText: "GitHub",
+  },
+  {
+    name: "Switch → Apple 原生移植",
+    mono: "Sw",
+    tagline: "把 Switch 游戏原生跑在 Apple 设备上的 Skill",
+    description:
+      "不做 CPU 模拟：游戏自己的 ARM64 代码直接跑，系统服务换成宿主 HLE，NVN 图形重编码到 Metal，着色器离线翻译。从一次真实移植（Apple TV 4K 上的《集合啦！动物森友会》，30 fps）蒸馏成 Claude Code skill，不含任何游戏代码。",
+    category: "开发 & 研究",
+    accent: "#e60012",
+    status: "开源",
+    tags: ["Claude Code", "移植", "Metal"],
+    link: "https://github.com/lfkdsk/switch-appletv-port-skill",
+    linkText: "GitHub",
+  },
+  {
+    name: "webOS TV App Skill",
+    mono: "Ws",
+    tagline: "LG webOS 电视应用开发手册",
+    description:
+      "从 6 个 webOS 项目蒸馏的 Claude Code skill：遥控器与焦点、音视频格式、页面与服务的数据流、打包调试、系统集成，外加「症状 → 原因 → 修法」手册。每条都标明是实测、代码实现还是只有说法。",
+    category: "开发 & 研究",
+    accent: "#a50034",
+    status: "开源",
+    tags: ["Claude Code", "webOS", "Agent Skill"],
+    link: "https://github.com/lfkdsk/webos-tv-app-skill",
+    linkText: "GitHub",
+  },
+  {
+    name: "brooks-price-action",
+    mono: "Bp",
+    tagline: "让 Claude 用 Al Brooks 价格行为读 K 线",
+    description:
+      "一个 Claude Code skill：逐根 K 线的背景、趋势与区间、Always In 方向、多空论证和测量目标。配套 OHLC 特征脚本、相似历史案例检索，以及对照分析师周末解读的盲测评测框架。不构成投资建议。",
+    category: "开发 & 研究",
+    accent: "#15803d",
+    status: "开源",
+    tags: ["Claude Code", "交易", "评测"],
+    link: "https://github.com/lfkdsk/brooks-price-action",
     linkText: "GitHub",
   },
 ];
