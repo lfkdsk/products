@@ -11,6 +11,7 @@
   var CATEGORY_EN = {
     "影像 & 创作": "Imaging & Creation",
     "生活 & 工具": "Life & Tools",
+    "电视 & 大屏": "TV & Big Screen",
     "平台 & 服务": "Platform & Services",
     "游戏 & 引擎": "Games & Engines",
     "开发 & 研究": "Dev & Research",
